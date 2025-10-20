@@ -1,0 +1,142 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    margin: 0%;
+}
+nav {
+    background-color: rgba(255, 255, 0, 0.5);
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo {
+    height: 100px;
+    width: 100px;
+}
+.list_of_links {
+    list-style-type: none;
+    display: flex;
+}
+.link {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+.link:hover {
+
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+header {
+    background-image: url('https://aulab.it/build/assets/cover-black-C250-z_R.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* position: absolute; */
+}
+.Main_page {
+    color: gray;
+    text-decoration: none;
+}
+.flex {
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+}
+.family {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    text-align: center;
+}
+.post {
+    width: 300px;
+    height: 300px;
+}
+.click {
+    cursor: pointer;
+}
+.click:hover {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: black;
+}
+aside {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+.w-100 {
+    width: 100%;
+}
+.list_of_subjects {
+    list-style-type: none;
+}
+.subject {
+    color: black;
+    text-decoration: none;
+}
+.list_of_manuals {
+    list-style-type: none;
+}
+.manual {
+    color: black;
+    text-decoration: none;
+}
+.final_link {
+    display: flex;
+    align-items: end;
+}
+.arrow {
+    height: 50px;
+    width: 50px;
+    animation-name: arrow; 
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    position: absolute;
+    right: 50px;
+}
+@keyframes arrow {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: 100px;
+    }
+}
+ @media screen and (max-width: 600px) {
+    .Logo {
+        width: 30px;
+        height: 30px;
+    }
+    .flex {
+        width: 100%;
+    }
+    aside {
+        background-color: rgba(137, 255, 47, 0.5);
+    }
+}
